@@ -1,0 +1,30 @@
+.container {
+    position: relative;
+    margin: calc((100vh - 500px)/2) calc((100% - 400px)/2);
+}
+
+.container .bg {
+    box-sizing: border-box;
+    border: 1px solid;
+    width: 400px;
+    height: 500px;
+    background: url(../image/bg1.jpg) 0/100% 100%;
+}
+
+.container a {
+    position: absolute;
+    /* top: calc((100% - 30px)/2); */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: cadetblue;
+    line-height: 30px;
+    padding: 0 10px;
+}
+
+.pre {
+    right: calc(100% + 20px);
+}
+
+.next {
+    left: calc(100% + 20px);
+}

@@ -1,0 +1,46 @@
+.container {
+    width: 5vh;
+    height: 5vh;
+    background-color: black;
+    position: fixed;
+    left: calc((100% - 5vh)/2);
+    top: calc((100% - 5vh)/2);
+}
+
+.box {
+    width: calc(100% * 5);
+    height: calc(100% * 5);
+    position: absolute;
+    line-height: calc(5vh * 5);
+    font-size: 1.2em;
+    text-align: center;
+    overflow: hidden;
+    color: white;
+}
+
+.topbox {
+    background-color: blue;
+    bottom: 0;
+    /* left: calc((100% - 100% * 5)/2); */
+    left:-200%;
+}
+
+
+.leftbox {
+    background-color: chartreuse;
+    right: 0;
+    z-index: -1;
+}
+
+.rightbox {
+    background-color: deeppink;
+}
+
+.topbox:hover,
+.leftbox:hover {
+    z-index: 1;
+}
+
+.rightbox:hover {
+    z-index: -2;
+}
